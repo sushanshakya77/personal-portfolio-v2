@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "PPMori-Extralight";
+  src: url("../../public/font/PPMori/PPMori-Extralight.otf") format("truetype");
+  font-weight: extralight;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "PPMori-Regular";
+  src: url("../public/font/PPMori/PPMori-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPEditorialNew-Italic";
+  src: url("../public/font/PPEditorialNew/PPEditorialNew-Italic.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* @font-face {
+  font-family: "PPMori-SemiBold";
+  src: url("../../public/font/PPMori/PPMori-SemiBold.otf") format("truetype");
+  font-weight: semibold;
+  font-style: normal;
+} */
+
+:root {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+}
+
+@layer base {
+  :root {
+    --background: #0b0a16;
+    --foreground: #c2c2c2;
+
+    --hover-background: #21262d;
+
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+
+    --popover: #ffffff;
+    --popover-foreground: #020817;
+
+    --card: #ffffff;
+    --card-foreground: #020817;
+
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+
+    --primary: #14469c;
+    --primary-foreground: #f5dddd;
+
+    --secondary: #f7f9f9;
+    --secondary-foreground: #14469c39;
+
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+
+    --destructive: #ef4444;
+    --destructive-foreground: #f8fafc;
+
+    --ring: #2e40a0;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #020817;
+    --foreground: #f8fafc;
+
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+
+    --popover: #020817;
+    --popover-foreground: #f8fafc;
+
+    --card: #020817;
+    --card-foreground: #f8fafc;
+
+    --border: #1e293b;
+    --input: #1e293b;
+
+    --primary: #f8fafc;
+    --primary-foreground: #0f172a;
+
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
+
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
+
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fef2f2;
+
+    --ring: #1e293b;
+  }
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb)); */
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: PPMori-Regular, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  .link-text {
+    font-size: 1.125rem;
+  }
+
+  .section-padding {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .text-h5 {
+    font-size: 1.5rem;
+  }
+
+  .text-h6 {
+    font-size: 1.25rem;
+  }
+
+  .text-display-0 {
+    font-size: clamp(3rem, -0.057rem + 8.0714vw, 7.25rem);
+    line-height: normal;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (min-width: 1440px) {
+  .link-text {
+    font-size: 1.25rem;
+  }
+  .text-h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .link2 {
+    --tw-translate-y: 2.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+.link1 {
+  display: flex;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link2 {
+  position: absolute;
+  inset: 0;
+  --tw-translate-y: 2rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.group:hover .link1 {
+  --tw-translate-y: -2rem;
+  opacity: 0;
+}
+
+.group:hover .link1,
+.link2 {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .link2 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
