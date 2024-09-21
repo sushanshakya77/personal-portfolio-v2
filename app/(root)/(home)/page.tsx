@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "./_components/Navbar";
+import Navbar from "./_components/navbar/Navbar";
 import { useEffect } from "react";
 
 export default function Home() {
