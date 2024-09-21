@@ -7,7 +7,9 @@ export default function Home() {
   useEffect(() => {
     const canvas = document.getElementById("noise") as HTMLCanvasElement;
     if (canvas) {
-      const ctx = canvas.getContext("2d");
+      const ctx = canvas.getContext("2d", {
+        willReadFrequently: true,
+      });
 
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -42,7 +44,7 @@ export default function Home() {
       <main>
         <canvas
           id="noise"
-          className="fixed inset-0 w-full h-full pointer-events-none z-[99999] opacity-[0.06]"
+          className="fixed inset-0 w-full h-full pointer-events-none z-[99] opacity-[0.05]"
         ></canvas>
       </main>
     </>
