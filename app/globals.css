@@ -109,6 +109,62 @@
 
     --ring: #1e293b;
   }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  caption {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.175px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
 }
 
 body {

@@ -7,10 +7,30 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    spacing: {
+      xxs: "4px",
+      xs: "8px",
+      sm: "12px",
+      md: "16px",
+      lg: "24px",
+      xl: "32px",
+      "2xl": "40px",
+      "3xl": "48px",
+      "4xl": "64px",
+    },
     extend: {
-      gridTemplateColumns: {
-        // Simple 16 column grid
-        "12": "repeat(12, 90px)",
+      // gridTemplateColumns: {
+      //   "12": "repeat(12, 90px)",
+      // },
+      screens: {
+        vxs: "380px", //mobile screen
+        xs: "480px", //mobile screen
+        sm: "768px", //ipad tablet
+        md: "1025px", // laptop and small screen
+        lg: "1200px", // large screen and desktop
+        xl: "1440px", //
+        "2xl": "1440px",
+        "3xl": "1700px",
       },
       fontSize: {
         xs: "0.75rem", // 12px
@@ -20,9 +40,16 @@ const config: Config = {
         xl: "1.4rem", // 22px
         "2xl": "1.5rem", // 24px
         "3xl": "1.625rem", // 26px
-        "4xl": "2rem", // 32px
+        "4xl": "2.125rem", // 34px
         "5xl": "3rem", // 48px
-        "6xl": "3.75rem", // 60px
+        "6xl": "4rem", // 64px
+        "7xl": "4.5rem", // 72px
+      },
+      container: {
+        center: true,
+        screens: {
+          "2xl": "1440px",
+        },
       },
       colors: {
         border: "var(--border)",
