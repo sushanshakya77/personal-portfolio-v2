@@ -25,6 +25,15 @@ const nextConfig = {
 
         return config
     },
+    images: {
+        remotePatterns: [{
+            protocol: "http",
+            hostname: "localhost",
+        }, {
+            protocol: "https",
+            hostname: "sushanshakya",
+        },]
+    }
 
 };
 
