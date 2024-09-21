@@ -17,12 +17,12 @@ const navBarData = [
 ];
 
 const Navbar = () => {
-  const nav = useRef<HTMLDivElement[]>([]);
+  const nav = useRef<(HTMLDivElement | null)[]>([]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
     <header
-      className=" w-full"
+      className="w-full"
       style={{
         opacity: 1,
         transform: "none",
@@ -33,8 +33,10 @@ const Navbar = () => {
         <div className="relative col-start-5 col-end-8 ring-[1px] ring-ring/20 rounded-full flex items-center justify-between p-[8px] h-[44px]">
           {navBarData.map(({ name, link }, idx) => (
             <div
-              key={link}
-              ref={(el) => (nav.current[idx] = el as HTMLDivElement)}
+              key={name}
+              ref={(el) => {
+                nav.current[idx] = el;
+              }}
             >
               <button
                 className={`transition-all relative text-sm duration-500 py-[6px] px-[24px] z-[1] ${
@@ -50,9 +52,9 @@ const Navbar = () => {
               <span
                 className={`bg-[#21262d]/50 border-[#2d409f]/25 border absolute rounded-full transition-all duration-500 ease-in-out`}
                 style={{
-                  width: nav.current[activeIndex]?.clientWidth,
-                  height: nav.current[activeIndex]?.clientHeight,
-                  left: nav.current[activeIndex]?.offsetLeft,
+                  width: nav.current[activeIndex]?.clientWidth ?? "88px",
+                  height: nav.current[activeIndex]?.clientHeight ?? "33px",
+                  left: nav.current[activeIndex]?.offsetLeft ?? 8,
                 }}
               ></span>
             </div>
