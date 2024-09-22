@@ -1,7 +1,9 @@
 "use client";
 
-import { useIntersectionObserver } from "@/hooks/custom/useIntersectionOnserver";
-import { getOriginUrl } from "@/lib/getOriginUrl";
+import { AnimatedCard } from "@/src/components/card/animated-card";
+import { Card } from "@/src/components/card/card";
+import { useIntersectionObserver } from "@/src/hooks/misc/useIntersectionOnserver";
+import { getOriginUrl } from "@/src/utils/getOriginUrl";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -33,22 +35,11 @@ export default function Home() {
           <h3 className="text-center uppercase tracking-widest">
             Recent projects
           </h3>
-          <div
-            className="bg-[#21262d]/50 rounded-xl border border-[#2d409f]/25 backdrop-blur-[30px] container hover:shadow-[0px_0px_40px_0px_rgb(36,36,36)] transition-all flex flex-col overflow-hidden ease-in-out duration-1000 will-change-auto  hover:scale-105 "
-            style={{
-              height: "505px",
-              width: "100%",
-              opacity: isIntersecting ? 1 : 0,
-              transform: isIntersecting
-                ? "perspective(1200px) scale(1) rotateX(0deg)"
-                : "perspective(1200px) scale(0.5) rotateX(20deg)",
-            }}
-            ref={ref}
-          >
+          <AnimatedCard isIntersecting={isIntersecting} ref={ref}>
             <div className="flex pt-2xl px-3xl">
               <h4 className="tracking-widest flex-1">01 | VEEL</h4>
               <Image
-                src={getOriginUrl() + "/_assets/workLogo/veel.webp"}
+                src={getOriginUrl() + "/workLogo/veel.webp"}
                 alt=""
                 width={24}
                 height={24}
@@ -59,16 +50,16 @@ export default function Home() {
             <div className="w-full flex gap-3xl">
               <div className="w-fit">
                 <Image
-                  src={getOriginUrl() + "/_assets/workLogo/veelSnippet.webp"}
+                  src={getOriginUrl() + "/workLogo/veelSnippet.webp"}
                   alt=""
                   width={450}
                   height={500}
-                  className="rounded-tr-lg"
+                  className="rounded-tr-lg "
                 />
               </div>
               <div className="flex flex-col space-y-md w-1/2">
                 <Image
-                  src={getOriginUrl() + "/_assets/workLogo/veelText.png"}
+                  src={getOriginUrl() + "/workLogo/veelText.png"}
                   alt=""
                   width={150}
                   height={400}
@@ -80,7 +71,7 @@ export default function Home() {
                 </h4>
               </div>
             </div>
-          </div>
+          </AnimatedCard>
         </div>
       </section>
     </>

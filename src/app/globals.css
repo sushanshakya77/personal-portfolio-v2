@@ -11,14 +11,14 @@
 
 @font-face {
   font-family: "PPMori-Regular";
-  src: url("../public/font/PPMori/PPMori-Regular.otf") format("truetype");
+  src: url("../../public/font/PPMori/PPMori-Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PPEditorialNew-Italic";
-  src: url("../public/font/PPEditorialNew/PPEditorialNew-Italic.otf")
+  src: url("../../public/font/PPEditorialNew/PPEditorialNew-Italic.otf")
     format("truetype");
   font-weight: normal;
   font-style: italic;
@@ -31,18 +31,6 @@
   font-style: normal;
 } */
 
-:root {
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x: ;
-  --tw-pan-y: ;
-}
-
 @layer base {
   :root {
     --background: #0b0a16;
@@ -50,14 +38,14 @@
 
     --hover-background: #21262d;
 
+    --card: #21262d80;
+    --card-foreground: #c2c2c2;
+
     --muted: #f1f5f9;
     --muted-foreground: #64748b;
 
     --popover: #ffffff;
     --popover-foreground: #020817;
-
-    --card: #ffffff;
-    --card-foreground: #020817;
 
     --border: #e2e8f0;
     --input: #e2e8f0;
@@ -74,9 +62,19 @@
     --destructive: #ef4444;
     --destructive-foreground: #f8fafc;
 
-    --ring: #2e40a0;
+    --ring: #2d409f40;
 
     --radius: 0.5rem;
+
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
   }
 
   .dark {

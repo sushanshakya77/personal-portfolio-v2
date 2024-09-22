@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Navbar from "./_components/navbar/Navbar";
+import Navbar from "../../components/shared/Navbar";
 
 export default function RootLayout({
   children,
