@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Navbar from "../../components/shared/Navbar";
+import { Footer } from "@/src/components/shared/Footer";
 
 export default function RootLayout({
   children,
@@ -48,6 +49,7 @@ export default function RootLayout({
       ></canvas>
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </>
   );
 }
