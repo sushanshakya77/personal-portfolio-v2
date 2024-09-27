@@ -1,6 +1,7 @@
 import React from "react";
 import Linkedin from "@/public/_assets/socialMedia/linkedin.svg";
 import GitHub from "@/public/_assets/socialMedia/github.svg";
+import Instagram from "@/public/_assets/socialMedia/instagram.svg";
 import Link from "next/link";
 
 export const Footer = () => {
@@ -25,6 +26,9 @@ export const Footer = () => {
             target="_blank"
           >
             <Linkedin />
+          </Link>
+          <Link href={"https://www.instagram.com/whossushan/"} target="_blank">
+            <Instagram />
           </Link>
           <Link href={"https://github.com/sushanshakya77"} target="_blank">
             <GitHub />
