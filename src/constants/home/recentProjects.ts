@@ -2,7 +2,7 @@ export const recentProjects = [
   {
     id: 1,
     name: "Veel",
-    smallIcon: "/workLogo/veel/veel.webp",
+    smallIcon: "/workLogo/veel/veel.jpg",
     snippetImage: "/workLogo/veel/veelSnippet.webp",
     textIcon: "/workLogo/veel/veelText.png",
     description:

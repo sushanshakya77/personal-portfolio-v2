@@ -1,7 +1,7 @@
 export const navBarData = [
   {
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     name: "Leisure",
@@ -9,6 +9,6 @@ export const navBarData = [
   },
   {
     name: "About",
-    link: "#",
+    link: "/about",
   },
 ] as const;
