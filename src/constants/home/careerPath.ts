@@ -18,7 +18,7 @@ export const careerPath = [
       name: "AppBox Tech",
       link: "https://appboxtech.com/",
       location: "Kathmandu, Nepal",
-      logo: "/workLogo/appbox/appbox.jpg",
+      logo: "/workLogo/appbox/appboxtech.jpg",
     },
     duration: "5 months",
     interval: "June 2023 - Jan 2023",
