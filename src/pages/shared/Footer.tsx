@@ -4,7 +4,7 @@ import GitHub from "@/public/_assets/socialMedia/github.svg";
 import Instagram from "@/public/_assets/socialMedia/instagram.svg";
 import Link from "next/link";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="w-full container">
       <div className="border-t border-ring w-full mt-2xl px-[72px]" />
@@ -36,3 +36,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

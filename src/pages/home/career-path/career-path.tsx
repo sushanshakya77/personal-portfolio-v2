@@ -1,7 +1,4 @@
-import { Card } from "@/src/components/card/card";
-
 import { careerPath } from "@/src/constants/home/careerPath";
-import Link from "next/link";
 import CareerPathCard from "./career-path-card";
 
 const CareerPath = () => {
@@ -28,10 +25,10 @@ const CareerPath = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            className="w-xl h-xl text-green-500 border border-primary rounded-full"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="w-xl h-xl text-green-500 border border-ring rounded-full"
           >
             <circle
               cx="12.1"

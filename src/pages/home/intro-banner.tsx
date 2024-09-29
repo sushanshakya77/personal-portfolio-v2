@@ -1,7 +1,7 @@
 import GibberishText from "@/src/components/text/gibberish-text";
 import React from "react";
 
-export const IntroBanner = () => {
+const IntroBanner = () => {
   return (
     <div className="col-start-2 col-end-9 h-[80vh] flex items-center">
       <div className="space-y-lg">
@@ -14,3 +14,5 @@ export const IntroBanner = () => {
     </div>
   );
 };
+
+export default IntroBanner;

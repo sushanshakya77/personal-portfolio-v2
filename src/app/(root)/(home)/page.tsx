@@ -1,6 +1,6 @@
-import { CareerPath } from "@/src/pages/home/career-path";
-import { IntroBanner } from "@/src/pages/home/intro-banner";
-import { RecentProjects } from "@/src/pages/home/recent-projects";
+import CareerPath from "@/src/pages/home/career-path/career-path";
+import IntroBanner from "@/src/pages/home/intro-banner";
+import RecentProjects from "@/src/pages/home/recent-projects";
 
 export default function Home() {
   return (

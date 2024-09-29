@@ -23,4 +23,4 @@ export const careerPath = [
     duration: "5 months",
     interval: "June 2023 - Jan 2023",
   },
-] as const;
+];

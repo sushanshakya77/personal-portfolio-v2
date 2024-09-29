@@ -8,7 +8,7 @@ import { getImage } from "@/src/utils/getOriginUrl";
 import Image from "next/image";
 import React from "react";
 
-export const RecentProjects = () => {
+const RecentProjects = () => {
   return (
     <>
       <div className="col-start-2 col-end-12 space-y-2xl relative">
@@ -66,3 +66,5 @@ export const RecentProjects = () => {
     </>
   );
 };
+
+export default RecentProjects;

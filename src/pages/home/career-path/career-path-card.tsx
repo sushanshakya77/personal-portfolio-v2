@@ -1,9 +1,23 @@
 import { Card } from "@/src/components/card/card";
-import Link from "next/link";
+
 import React from "react";
-import { ICareerPath } from "./types";
 import Image from "next/image";
 import { getImage } from "@/src/utils/getOriginUrl";
+
+export interface ICareerPath {
+  id: number;
+  designation: string;
+  duration: string;
+  interval: string;
+  company: ICompany;
+}
+
+export interface ICompany {
+  name: string;
+  link: string;
+  location: string;
+  logo: string;
+}
 
 const CareerPathCard = ({
   company,
@@ -22,8 +36,8 @@ const CareerPathCard = ({
             <span className="relative shrink-0 overflow-hidden w-3xl h-3xl rounded-lg">
               <Image
                 className="aspect-square h-full w-full"
-                src={getImage(company.logo)}
-                alt={company.name}
+                src={getImage(company?.logo)}
+                alt={company?.name}
                 width={48}
                 height={48}
               />
@@ -31,21 +45,21 @@ const CareerPathCard = ({
             <div>
               <div className="text-lg font-semibold">{designation}</div>
               <div className="flex gap-xxs font-semibold md:gap-xs">
-                <Link target="_blank" href={company.link}>
+                <a target="_blank" href={company?.link}>
                   <div className="font-medium hover:text-blue-500 hover:underline text-md">
-                    {company.name}
+                    {company?.name}
                   </div>
-                </Link>
+                </a>
                 <div>—</div>
                 <div>Full Time</div>
               </div>
               <div className="text-sm text-secondary-foreground">
-                {company.location}
+                {company?.location}
               </div>
             </div>
           </div>
           <div className="flex flex-col items-start gap-xxs py-3 pl-16 md:py-0 md:items-end">
-            <div className="font-medium text-tp text-md">{duration}</div>
+            <div className="font-medium text-md">{duration}</div>
             <div className="text-sm text-secondary-foreground">{interval}</div>
           </div>
         </div>
