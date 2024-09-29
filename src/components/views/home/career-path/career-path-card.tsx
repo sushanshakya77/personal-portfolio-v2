@@ -35,7 +35,7 @@ const CareerPathCard = ({
           <div className="flex gap-sm">
             <span className="relative shrink-0 overflow-hidden w-3xl h-3xl rounded-lg">
               <Image
-                className="aspect-square h-full w-full"
+                className="aspect-square object-cover bg-white h-full w-full"
                 src={getImage(company?.logo)}
                 alt={company?.name}
                 width={48}
